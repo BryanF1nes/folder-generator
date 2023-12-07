@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: rgb(9,47,121);
+    background: linear-gradient(0deg, rgb(8, 42, 91) 0%, rgb(0, 179, 255) 100%);
+    color: white;
+}
+
+#bg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    opacity: 0.2;
+}
+    
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    z-index: 100;
+}
+
+.container > div {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container > div:first-child {
+    margin-top: 20px;
+}
+
+.container > div:last-child {
+    margin-bottom: 40px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.selector select {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    width: 125px;
+    height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+li {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+button {
+    padding: 20px;
+    color: white;
+    background-color: #02b8dc;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 5px 5px 7px 1px rgba(0,0,0,0.35); 
+}
+
+button:hover {
+    background-color: #00d4ff
+}
+
+p {
+    font-size: 12px;
+}
+
+.toast-close {
+    padding: 3px 6px;
+    font-size: 14px;
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.toast-close:hover {
+    background: rgb(232, 232, 232)
+}

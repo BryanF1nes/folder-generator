@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Folder Generator - V1.0.1</title>
+</head>
+<body>
+  <img id="bg" src="./images/rec_logo.png" alt="">
+  <div class="container">
+    <div>
+      <img src="./images/rec_logo.png" alt="">
+      <h1>Reid Engineering Company</h1>
+    </div>
+    <div class="form">
+        <div class="selector">
+          <label for="folderStructure">Folder Structure:</label>
+          <select name="folderStructure" id="folderStructure">
+            <option value="Design">Design</option>
+            <option value="Evaluation">Evaluation</option>
+            <option value="Permit">Permit</option>
+          </select>
+        </div>
+        <div>
+          <button id="generateFolders">Generate Folders</button>
+        </div>
+    </div>
+    <footer>
+      <p>&copy; Reid Engineering Company - 2023</p>
+      <p>Developed by: Bryan Fines</p>
+    </footer>
+  </div>
+  <script src="./renderer.js"></script>
+</body>
+</html>
